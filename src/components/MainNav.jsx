@@ -2,28 +2,35 @@ import React from 'react';
 import { Navbar, Nav, NavDropdown, Button } from 'react-bootstrap';
 
 function MainNav () {
+  const navGrid = {
+    display: 'grid',
+    gridTemplateColumns: '1fr 800px 65px',
+  };
+  const dropText = {
+    fontSize: '20px',
+    float: 'left'
+  }
   return (
     <div>
-      <Navbar bg="light" expand="lg">
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar bg="light" expand="lg" style={navGrid}>
+        <Navbar.Brand href="#home">puppet</Navbar.Brand>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+            <NavDropdown title="Products & Use Cases" id="basic-nav-dropdown" style={dropText}>
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+            <NavDropdown title="Knowledge & Services" id="basic-nav-dropdown" style={dropText}>
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+            <NavDropdown title="Company & Community" id="basic-nav-dropdown" style={dropText}>
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
@@ -31,8 +38,8 @@ function MainNav () {
               <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
             </NavDropdown>
           </Nav>
-            <Button variant="primary">Try</Button>
         </Navbar.Collapse>
+        <Button variant="primary">Try</Button>
       </Navbar>
     </div>
   )

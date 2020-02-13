@@ -5,6 +5,7 @@ function MainNav () {
   const navGrid = {
     display: 'grid',
     gridTemplateColumns: '1fr 800px 65px',
+    borderBottom: '4px solid orange'
   };
   const dropText = {
     fontSize: '20px',
@@ -12,7 +13,7 @@ function MainNav () {
   }
   return (
     <div>
-      <Navbar bg="light" expand="lg" style={navGrid}>
+      <Navbar expand="lg" style={navGrid}>
         <img src="/puppet-logo-black.svg" width="180px" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">

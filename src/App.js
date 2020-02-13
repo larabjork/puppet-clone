@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import MainNav from './components/MainNav';
 import BabyNav from './components/BabyNav';
 import Shout from './components/Shout';
+import LeaderBlock from './components/LeaderBlock';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <BabyNav/>
       <MainNav/>
       <Shout/>
-
+      <LeaderBlock/>
     </div>
   );
 }

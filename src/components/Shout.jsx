@@ -19,7 +19,7 @@ function Shout() {
 
   };
   const artStyle = {
-    width: '80%',
+    width: '90%',
     maxWidth: '100%',
     margin: 'auto'
   };

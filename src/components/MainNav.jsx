@@ -13,7 +13,7 @@ function MainNav () {
   return (
     <div>
       <Navbar bg="light" expand="lg" style={navGrid}>
-        <Navbar.Brand href="#home">puppet</Navbar.Brand>
+        <img src="/puppet-logo-black.svg" width="180px" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
             <NavDropdown title="Products & Use Cases" id="basic-nav-dropdown" style={dropText}>
